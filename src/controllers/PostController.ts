@@ -36,7 +36,7 @@ class PostController {
         title: body.title,
         content: body.content,
         published: body.published || false,
-        author: { connect: { id: parseInt(body.authorId) } }, 
+        author: { connect: { id: parseInt(body.authorId) } },
       });
       res.json({
         status: "ok",

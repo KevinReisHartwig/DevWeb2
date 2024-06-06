@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "copy": "echo \"Hello World",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prisma": "npx prisma generate --schema=src/prisma/schema.prisma",
+    "prisma": "npx prisma generate --schema=prisma/schema.prisma",
     "build": "npx tsc",
     "dev": "npx ts-node-dev ./src/server"
   },

@@ -10,6 +10,7 @@ model User {
   email String  @unique
   name  String?
   posts Post[]
+  comments  Comment[]
 }
 
 model Post {
@@ -18,6 +19,16 @@ model Post {
   content   String?
   published Boolean @default(false)
   author    User    @relation(fields: [authorId], references: [id])
+  authorId  Int
+  comments  Comment[]
+}
+
+model Comment {
+  id        Int       @id @default(autoincrement())
+  content   String
+  post      Post      @relation(fields: [postId], references: [id])
+  postId    Int
+  author    User      @relation(fields: [authorId], references: [id])
   authorId  Int
 }
 
