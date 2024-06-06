@@ -78,7 +78,7 @@ class CommentController {
       });
     }
   }
-
+  
   async deleteComment(req: Request, res: Response) {
     const id = req.params.id;
 

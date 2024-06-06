@@ -3,13 +3,13 @@ import CommentController from "../controllers/CommentController";
 
 const CommentRouter = Router();
 
-CommentRouter.get("/api/comments", CommentController.listComments);
+CommentRouter.get("/api/comment/get", CommentController.listComments);
 
-CommentRouter.post("/api/comment", CommentController.createComment);
+CommentRouter.post("/api/comment/post", CommentController.createComment);
 
-CommentRouter.patch("/api/comment/:id", CommentController.updateComment);
+CommentRouter.patch("/api/comment/upadate/:id", CommentController.updateComment);
 
-CommentRouter.delete("/api/comment/:id", CommentController.deleteComment);
+CommentRouter.delete("/api/comment/delete/:id", CommentController.deleteComment);
 
 
 export default CommentRouter;

@@ -3,12 +3,12 @@ import UserController from "../controllers/UserController";
 
 const UserRouter = Router();
 
-UserRouter.get("/api/users", UserController.listUsers);
+UserRouter.get("/api/user/get", UserController.listUsers);
 
-UserRouter.post("/api/user", UserController.createUser);
+UserRouter.post("/api/user/post", UserController.createUser);
 
-UserRouter.patch("/api/user/:id", UserController.updateUser);
+UserRouter.patch("/api/user/update/:id", UserController.updateUser);
 
-UserRouter.delete("/api/user/:id", UserController.deleteUser);
+UserRouter.delete("/api/user/delete/:id", UserController.deleteUser);
 
 export default UserRouter;
