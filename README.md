@@ -11,6 +11,7 @@
 - TypeScript
 - JavaScript
 - SQL Lite com Prisma
+- Thunder Client
 
 # Comandos
 
