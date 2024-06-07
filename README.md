@@ -12,6 +12,7 @@
 - JavaScript
 - SQL Lite com Prisma
 - Thunder Client
+- Express
 
 # Comandos
 
