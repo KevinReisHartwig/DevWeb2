@@ -1,4 +1,4 @@
-# Projeto Telegram-Bot
+# TypeScript API
 
 <p>Como conversamos em sala de aula, o projeto prático da C2 será a implementação de uma API usando NodeJS, Typescript, Prisma e um banco de dados a sua escolha (sugiro o SQLite), nos moldes do que fizemos em sala de aula. </p>
 
