@@ -1,8 +1,8 @@
 # TypeScript API
 
-<p>Como conversamos em sala de aula, o projeto prático da C2 será a implementação de uma API usando NodeJS, Typescript, Prisma e um banco de dados a sua escolha (sugiro o SQLite), nos moldes do que fizemos em sala de aula. </p>
+<p>Como projeto prático da C3, a tarefa de vocês será implementar o mecanismo de autenticação via Tokens JWT na API desenvolvida na C2. Seu projeto deverá possuir uma rota de cadastro de usuários e outra rota de login, que emitem um token JWT para que o usuário faça requisições em sua API. </p>
 
-<p>Vocês deverão implementar o padrão MVC para os modelos existentes no Prisma Quickstart (https://www.prisma.io/docs/getting-started/quickstart). Adicionalmente, vocês deverão incluir um modelo para Comentários: um Post possui vários Comentários e cada Comentário pertence a somente um Post. Além disso, um Usuário faz um Comentário.</p>
+<p>Por fim, você deverá criar um Dockerfile para criar uma imagem da API no Docker e inserí-lo no repositório do Github PÚBLICO.</p>
 
 <p>Ao término da implementação, vocês deverão postar aqui neste fórum o link PÚBLICO para o repositório no Github do projeto de vocês.</p>
 
