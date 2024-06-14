@@ -1,9 +1,10 @@
 import { Router } from "express";
 import CommentController from "../controllers/CommentController";
+import { authenticate } from "../middlewares/MiddlewareAutenticacao";
 
 const CommentRouter = Router();
 
-CommentRouter.get("/api/comment/get", CommentController.listComments);
+CommentRouter.get("/api/comment/get", authenticate, CommentController.listComments);
 
 CommentRouter.post("/api/comment/post", CommentController.createComment);
 

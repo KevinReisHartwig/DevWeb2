@@ -1,9 +1,10 @@
 import { Router } from "express";
 import UserController from "../controllers/UserController";
+import { authenticate } from "../middlewares/MiddlewareAutenticacao";
 
 const UserRouter = Router();
 
-UserRouter.get("/api/user/get", UserController.listUsers);
+UserRouter.get("/api/user/get", authenticate, UserController.listUsers);
 
 UserRouter.post("/api/user/post", UserController.createUser);
 

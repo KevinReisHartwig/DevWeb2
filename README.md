@@ -1,4 +1,4 @@
-# Projeto Telegram-Bot
+# TypeScript API
 
 <p>Como conversamos em sala de aula, o projeto prático da C2 será a implementação de uma API usando NodeJS, Typescript, Prisma e um banco de dados a sua escolha (sugiro o SQLite), nos moldes do que fizemos em sala de aula. </p>
 
@@ -7,11 +7,14 @@
 <p>Ao término da implementação, vocês deverão postar aqui neste fórum o link PÚBLICO para o repositório no Github do projeto de vocês.</p>
 
 # Ferramentas utilizadas
+
 - NodeJS
 - TypeScript
 - JavaScript
 - SQL Lite com Prisma
 - Thunder Client
+- Express
+- Docker
 
 # Comandos
 
@@ -20,3 +23,9 @@
 - npm run prisma
 - npm run build
 - npm run dev
+
+# Rodar o docker
+
+- docker build -t nome-da-imagem .
+
+- docker run -p 3000:3000 nome-da-imagem
