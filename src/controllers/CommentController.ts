@@ -91,13 +91,13 @@ class CommentController {
     }
 
     try {
-      const response = await CommentDataBaseService.deleteDBComment(
-        parseInt(id)
-      );
+      const response = await CommentDataBaseService.deleteDBComment(parseInt(id));
+      if (response){
       res.json({
         status: "ok",
         message: "Comentário deletado com sucesso",
       });
+    }
     } catch (error: any) {
       res.json({
         status: "error",

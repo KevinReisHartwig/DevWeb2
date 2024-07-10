@@ -1,9 +1,10 @@
 import { Router } from "express";
 import PostController from "../controllers/PostController";
+import { authenticate } from "../middlewares/MiddlewareAutenticacao";
 
 const PostRouter = Router();
 
-PostRouter.get("/api/post/get", PostController.listPosts);
+PostRouter.get("/api/post/get", authenticate, PostController.listPosts);
 
 PostRouter.post("/api/post/post", PostController.createPost);
 

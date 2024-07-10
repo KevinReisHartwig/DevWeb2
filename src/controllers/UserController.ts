@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import UserDataBaseService from "../services/UserDataBaseService";
+import { hashPassword } from '../utils/Bcrypt';
 
 class UserController {
   constructor() {}
@@ -30,11 +31,12 @@ class UserController {
         message: "Falta parâmetros",
       });
     }
-
     try {
+      const hashedPassword = await hashPassword(req.body.password);
       const newuser = await UserDataBaseService.insertDBUser({
         name: body.name,
         email: body.email,
+        password: hashedPassword,
       });
       res.json({
         status: "ok",
